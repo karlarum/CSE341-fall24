@@ -1,0 +1,23 @@
+[
+    {
+        "firstName": "Chance",
+        "lastName": "Rummler",
+        "email": "chancerummler@gmail.com",
+        "favoriteColor": "Blue",
+        "birthday": "02/11/93"
+    },
+    {
+        "firstName": "Arturo",
+        "lastName": "Perez",
+        "email": "arturoperez@gmail.com",
+        "favoriteColor": "Blue",
+        "birthday": "03/05/71"
+    },
+    {
+        "firstName": "Kai",
+        "lastName": "Rummler",
+        "email": "kairummler@gmail.com",
+        "favoriteColor": "Blue",
+        "birthday": "07/19/01"
+    }
+]
