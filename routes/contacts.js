@@ -14,21 +14,6 @@ router.get('/', async (req, res) => {
     }
 });
 
-// router.get('/:id', async (req, res) => {
-//     const id = req.params.id;
-//     try {
-//         const db = getDb().db('text');
-//         const contact = await db.collection('contacts').findOne({ _id: new ObjectId(id) });
-//         if (!contact) {
-//             return res.status(404).send('Contact not found');
-//         }
-//         res.json(contact);
-//     } catch (err) {
-//         console.error('Error fetching contacts:', err);
-//         res.status(500).send('Internal Server Error');
-//     }
-// });
-
 router.get('/:id', async (req, res) => {
     const id = req.params.id;
 

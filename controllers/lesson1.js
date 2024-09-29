@@ -10,8 +10,8 @@ const chanceRoute = (req, res) => {
 
 const getContacts = async (req, res) => {
     try {
-        const db = getDb().db("text"); // Access the database; replace "text" with your DB name
-        const contacts = await db.collection('contacts').find().toArray(); // Fetch all contacts from the 'contacts' collection
+        const db = getDb().db("text");
+        const contacts = await db.collection('contacts').find().toArray();
         res.json(contacts);
     } catch (err) {
         console.error('Error fetching contacts:', err);
