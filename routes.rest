@@ -32,7 +32,7 @@ Content-Type: application/json
         "birthday": "04/2/95"
     }
 
-### Update contact (change Kai's name to his middle name "Christopher"
+### Update contact (change Kai's name to his middle name "Christopher")
 PUT http://localhost:3000/contacts/67005b2240a7808a8e786177 HTTP/1.1
 Content-Type: application/json
 
@@ -55,8 +55,8 @@ GET https://cse341-fall24-2sba.onrender.com/contacts/66f8baa464be7513e2877ea4
 GET https://cse341-fall24-2sba.onrender.com/contacts/66f8baa464be7513e2877ea5
 ### Get contact 3
 GET https://cse341-fall24-2sba.onrender.com/contacts/66f8baa464be7513e2877ea6
-### Create contact
-POST http://localhost:3000/contacts HTTP/1.1
+### Create contact 1
+POST https://cse341-fall24-2sba.onrender.com/contacts HTTP/1.1
 Content-Type: application/json
 
     {
@@ -66,16 +66,27 @@ Content-Type: application/json
         "favoriteColor": "Green",
         "birthday": "03/22/95"
     }
-### Update contact
-PUT http://localhost:3000/contacts/66f8baa464be7513e2877ea6 HTTP/1.1
+### Create contact 2
+POST https://cse341-fall24-2sba.onrender.com/contacts HTTP/1.1
 Content-Type: application/json
 
     {
-        "firstName": "Christopher",
+        "firstName": "Bonnee",
+        "lastName": "Rummler",
+        "email": "bonnee@gmail.com",
+        "favoriteColor": "Blue",
+        "birthday": "04/2/95"
+    }
+### Update contact - change Kai's name to his middle name "Christopher"
+PUT https://cse341-fall24-2sba.onrender.com/contacts/66f8baa464be7513e2877ea6 HTTP/1.1
+Content-Type: application/json
+
+    {
+        "firstName": "Kai",
         "lastName": "Rummler",
         "email": "kairummler@gmail.com",
         "favoriteColor": "Blue",
         "birthday": "07/19/01"
     } 
 ### Delete contact
-DELETE http://localhost:3000/contacts/670058de40a7808a8e786176 HTTP/1.1
+DELETE https://cse341-fall24-2sba.onrender.com/contacts/67005b2240a7808a8e786177 HTTP/1.1
