@@ -12,7 +12,7 @@ app
   .use(bodyParser.json())
   .use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
   .use((req, res, next) => {
-    res.setHeader('Access-Control-Allow-Origin', 'https://cse341-fall24-2sba.onrender.com');
+    res.setHeader('Access-Control-Allow-Origin', '//cse341-fall24-2sba.onrender.com');
     next();
   })
   .use('/', require('./routes'));
