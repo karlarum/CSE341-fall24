@@ -5,5 +5,6 @@ const contactsRouter = require('../routes/contacts');
 routes.get('/', lesson1Controller.karlaRoute);
 routes.get('/chance', lesson1Controller.chanceRoute);
 routes.use('/contacts', contactsRouter);
+routes.use('/', require('./contacts'));
 
 module.exports = routes;

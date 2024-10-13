@@ -58,10 +58,9 @@ router.put('/:id', async (req, res) => {
 
   try {
     const db = getDb().db('text');
-    const result = await db.collection('contacts').updateOne(
-      { _id: new ObjectId(id) },
-      { $set: updatedContact }
-    );
+    const result = await db
+      .collection('contacts')
+      .updateOne({ _id: new ObjectId(id) }, { $set: updatedContact });
 
     if (result.matchedCount === 0) {
       return res.status(404).send('Contact not found');
